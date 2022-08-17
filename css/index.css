@@ -10,12 +10,14 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
 body {
 	background-color: var(--light-gray);
 	font-family: 'Outfit', sans-serif;
 }
-.main-content {
-	width: 616px;
+main {
+	width: 90%;
+	max-width: 600px;
 	background: var(--white);
 	border-radius: 20px;
 	overflow: hidden;
@@ -25,6 +27,7 @@ body {
 	margin: 20px;
 	border-radius: 20px;
 	justify-content: center;
+	width: 94%;
 }
 .container {
 	display: flex;
@@ -43,4 +46,10 @@ body {
 .content {
 	font-size: 18px;
 	color: var(--grayish-blue);
+}
+@media screen and (max-width: 375px) {
+	.qr-code {
+		width: 86%;
+		margin: 24px;
+	}
 }
